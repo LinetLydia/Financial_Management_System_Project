@@ -140,11 +140,6 @@ View the live dashboard here:
 
 ---
 
-## **Dashboard Preview**
-Below is the static screenshot of the final dashboard:
-
-![Financial Dashboard](/mnt/data/f6cceee1-ac32-4a79-b743-1c08ce8fc717.png)
-
 The dashboard includes:
 
 ### ✔ Category Spending (Bar Chart)  
