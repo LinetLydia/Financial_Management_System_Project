@@ -142,13 +142,13 @@ View the live dashboard here:
 
 The dashboard includes:
 
-### ✔ Category Spending (Bar Chart)  
+### Category Spending (Bar Chart)  
 Shows how money is distributed across expense categories.
 
-### ✔ Monthly Line Chart  
+### Monthly Line Chart  
 Displays income, expenses, and savings over time.
 
-### ✔ Savings Progress (Bar Chart)  
+### Savings Progress (Bar Chart)  
 Shows percentage completion toward savings goals.
 
 ---
