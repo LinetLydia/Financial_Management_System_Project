@@ -3,8 +3,6 @@
 This project demonstrates the end-to-end development of a Financial Management System (FMS) using SQLite (SQL), Python, and Tableau Public.  
 The system stores income, expenses, budgets, and savings goals, and visualizes key financial insights through interactive dashboards.
 
----
-
 ## 1. Project Overview
 
 The Financial Management System was designed to:
@@ -18,8 +16,6 @@ The Financial Management System was designed to:
 
 This project showcases skills in database design, SQL querying, Python-based data engineering, and Tableau dashboard development.
 
----
-
 ## 2. Technologies Used
 
 - **Python:** sqlite3, pandas, datetime, random  
@@ -27,8 +23,6 @@ This project showcases skills in database design, SQL querying, Python-based dat
 - **Tableau Public** (interactive dashboards)  
 - **Jupyter Notebook**  
 - **Markdown** for documentation  
-
----
 
 ## 3. Database Schema (ER Diagram)
 
@@ -45,8 +39,6 @@ These tables include primary keys, foreign keys, constraints, and appropriate re
 
 *ER Diagram to be added* (can be generated using dbdiagram.io, DrawSQL, or Lucidchart).
 
----
-
 ## 4. SQL & Python Pipeline
 
 ### 4.1 Schema Creation (Python + SQLite)
@@ -54,12 +46,13 @@ These tables include primary keys, foreign keys, constraints, and appropriate re
 All database tables were created using Python’s sqlite3 module.
 
 **Example — Users Table**  
-***sql
+```sql
 CREATE TABLE IF NOT EXISTS Users (
     user_id INTEGER PRIMARY KEY,
     name TEXT NOT NULL,
     email TEXT UNIQUE NOT NULL
 );
+```
 
 ### 4.2 Data Generation & Insertion
 
@@ -73,12 +66,13 @@ Python was used to generate realistic synthetic data for:
 - Savings goals  
 
 **Example — Category Insertion**
-***sql
+```sql
 INSERT INTO Categories (category_name, category_type)
 VALUES 
 ("Salary", "Income"),
 ("Groceries", "Expense"),
 ("Rent", "Expense");
+```
 
 ### 4.3 Feature Engineering (SQL Views)
 
@@ -93,7 +87,7 @@ The main views include:
 - **SavingsProgress**
 
 **Example — Savings Progress View**
-***sql
+```sql
 CREATE VIEW IF NOT EXISTS SavingsProgress AS
 SELECT 
     user_id,
@@ -102,6 +96,7 @@ SELECT
     current_amount,
     ROUND((current_amount * 100.0) / target_amount, 2) AS progress_percentage
 FROM SavingsGoals;
+```
 
 ### 4.4 Analytical SQL Queries
 
@@ -115,17 +110,18 @@ Python executed several SQL queries to generate financial insights, including:
 These queries pulled data from both raw tables and SQL views created earlier.
 
 **Example — Retrieve Monthly Summary**
-***sql
+```sql
 SELECT *
 FROM MonthlySummary
 ORDER BY year_month;
+```
 
 ## 5. Tableau Visualizations
 
 An interactive Tableau dashboard was created to display key financial insights and trends.
 
 **Live Dashboard:**  
-https://public.tableau.com/authoring/FinancialManagementDashboardFinal/Dashboard1-FinancialPerformanceOverview#1
+https://public.tableau.com/views/FinancialManagementSystemFMS/Dashboard1-FinancialPerformanceOverview?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
 
 The dashboard includes the following visualizations:
 
