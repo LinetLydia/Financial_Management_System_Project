@@ -1,4 +1,885 @@
-user_id,category_name,total_spent
-1,Groceries,3500.0
-1,Rent,15000.0
-2,Utilities,4500.0
+user_id,full_name,category_name,total_spent
+1026,Brenda Kamau,Rent,2595.0
+1026,Brenda Kamau,Groceries,54011.93
+1026,Brenda Kamau,Transport,30809.98
+1026,Brenda Kamau,Utilities,34139.25
+1026,Brenda Kamau,Internet,40452.39
+1026,Brenda Kamau,Eating Out,10051.66
+1026,Brenda Kamau,Entertainment,24500.18
+1026,Brenda Kamau,Healthcare,58152.42
+1026,Brenda Kamau,Airtime & Data,2114.04
+1026,Brenda Kamau,Savings Deposit,3431.23
+1026,Brenda Kamau,Loan Repayment,43580.79
+1102,Brenda Mutiso,Rent,53402.15
+1102,Brenda Mutiso,Groceries,40854.91
+1102,Brenda Mutiso,Transport,35171.06
+1102,Brenda Mutiso,Utilities,29257.95
+1102,Brenda Mutiso,Internet,62053.76
+1102,Brenda Mutiso,Eating Out,36947.48
+1102,Brenda Mutiso,Entertainment,49450.16
+1102,Brenda Mutiso,Healthcare,23767.62
+1102,Brenda Mutiso,Education,40973.19
+1102,Brenda Mutiso,Airtime & Data,25266.24
+1102,Brenda Mutiso,Savings Deposit,12544.05
+1102,Brenda Mutiso,Loan Repayment,61206.76
+1108,Linet Otieno,Rent,67020.33
+1108,Linet Otieno,Groceries,7364.55
+1108,Linet Otieno,Transport,23422.6
+1108,Linet Otieno,Utilities,53739.28
+1108,Linet Otieno,Internet,32550.46
+1108,Linet Otieno,Eating Out,14646.74
+1108,Linet Otieno,Entertainment,18347.17
+1108,Linet Otieno,Healthcare,19431.79
+1108,Linet Otieno,Education,59328.39
+1108,Linet Otieno,Airtime & Data,11040.03
+1108,Linet Otieno,Savings Deposit,38305.86
+1108,Linet Otieno,Loan Repayment,10770.72
+1122,Faith Kamau,Rent,18118.68
+1122,Faith Kamau,Groceries,14373.59
+1122,Faith Kamau,Utilities,8912.75
+1122,Faith Kamau,Internet,4926.38
+1122,Faith Kamau,Eating Out,19809.51
+1122,Faith Kamau,Entertainment,1761.44
+1122,Faith Kamau,Healthcare,27294.59
+1122,Faith Kamau,Education,12344.49
+1122,Faith Kamau,Airtime & Data,32554.26
+1122,Faith Kamau,Savings Deposit,30153.03
+1122,Faith Kamau,Loan Repayment,8610.86
+1130,Sammy Otieno,Rent,22069.32
+1130,Sammy Otieno,Groceries,58499.06
+1130,Sammy Otieno,Transport,44550.71
+1130,Sammy Otieno,Utilities,20252.75
+1130,Sammy Otieno,Internet,16312.25
+1130,Sammy Otieno,Eating Out,14775.54
+1130,Sammy Otieno,Entertainment,2339.73
+1130,Sammy Otieno,Healthcare,50739.02
+1130,Sammy Otieno,Education,16326.98
+1130,Sammy Otieno,Airtime & Data,19217.42
+1130,Sammy Otieno,Savings Deposit,62012.78
+1130,Sammy Otieno,Loan Repayment,56127.28
+1177,Mwende Ouma,Groceries,60119.33
+1177,Mwende Ouma,Transport,54225.35
+1177,Mwende Ouma,Internet,37970.63
+1177,Mwende Ouma,Eating Out,51673.98
+1177,Mwende Ouma,Entertainment,13520.26
+1177,Mwende Ouma,Healthcare,43737.96
+1177,Mwende Ouma,Education,11564.37
+1177,Mwende Ouma,Airtime & Data,13583.53
+1177,Mwende Ouma,Savings Deposit,20796.79
+1177,Mwende Ouma,Loan Repayment,33440.47
+1322,Eric Koech,Rent,61318.36
+1322,Eric Koech,Groceries,11471.58
+1322,Eric Koech,Utilities,32248.29
+1322,Eric Koech,Internet,23225.11
+1322,Eric Koech,Eating Out,38668.14
+1322,Eric Koech,Entertainment,77234.06
+1322,Eric Koech,Healthcare,41782.29
+1322,Eric Koech,Education,66873.09
+1322,Eric Koech,Airtime & Data,24974.23
+1322,Eric Koech,Savings Deposit,3760.1
+1322,Eric Koech,Loan Repayment,8692.41
+1356,Wanja Ouma,Rent,54645.56
+1356,Wanja Ouma,Groceries,23466.02
+1356,Wanja Ouma,Transport,50209.37
+1356,Wanja Ouma,Utilities,17877.2
+1356,Wanja Ouma,Internet,24637.22
+1356,Wanja Ouma,Eating Out,15019.58
+1356,Wanja Ouma,Entertainment,18842.23
+1356,Wanja Ouma,Healthcare,5913.46
+1356,Wanja Ouma,Airtime & Data,38807.17
+1356,Wanja Ouma,Savings Deposit,38837.88
+1356,Wanja Ouma,Loan Repayment,41812.47
+1379,David Wafula,Rent,14252.59
+1379,David Wafula,Groceries,20232.81
+1379,David Wafula,Transport,7631.64
+1379,David Wafula,Utilities,16055.92
+1379,David Wafula,Internet,18068.65
+1379,David Wafula,Eating Out,11358.3
+1379,David Wafula,Healthcare,25172.95
+1379,David Wafula,Airtime & Data,10446.19
+1379,David Wafula,Savings Deposit,6446.58
+1379,David Wafula,Loan Repayment,23616.83
+1383,Michael Kariuki,Rent,30972.81
+1383,Michael Kariuki,Transport,3812.56
+1383,Michael Kariuki,Utilities,31421.78
+1383,Michael Kariuki,Eating Out,19659.05
+1383,Michael Kariuki,Entertainment,42330.63
+1383,Michael Kariuki,Healthcare,53593.85
+1383,Michael Kariuki,Education,15220.49
+1383,Michael Kariuki,Airtime & Data,55123.73
+1383,Michael Kariuki,Savings Deposit,3263.56
+1383,Michael Kariuki,Loan Repayment,1179.62
+1396,Naomi Njoroge,Groceries,94198.06
+1396,Naomi Njoroge,Transport,61433.29
+1396,Naomi Njoroge,Utilities,37588.81
+1396,Naomi Njoroge,Internet,22009.58
+1396,Naomi Njoroge,Eating Out,34520.32
+1396,Naomi Njoroge,Entertainment,20922.58
+1396,Naomi Njoroge,Healthcare,29114.08
+1396,Naomi Njoroge,Education,41199.68
+1396,Naomi Njoroge,Airtime & Data,47735.93
+1396,Naomi Njoroge,Savings Deposit,24389.03
+1396,Naomi Njoroge,Loan Repayment,69290.19
+1418,David Mwangi,Rent,4283.65
+1418,David Mwangi,Groceries,33915.14
+1418,David Mwangi,Transport,61750.54
+1418,David Mwangi,Utilities,56771.66
+1418,David Mwangi,Internet,64434.69
+1418,David Mwangi,Eating Out,24053.91
+1418,David Mwangi,Entertainment,40369.15
+1418,David Mwangi,Healthcare,28667.48
+1418,David Mwangi,Education,28454.48
+1418,David Mwangi,Airtime & Data,32455.96
+1418,David Mwangi,Savings Deposit,15322.69
+1419,Faith Koech,Rent,35042.26
+1419,Faith Koech,Groceries,19676.87
+1419,Faith Koech,Transport,66506.18
+1419,Faith Koech,Utilities,8842.71
+1419,Faith Koech,Internet,11166.35
+1419,Faith Koech,Eating Out,18532.3
+1419,Faith Koech,Entertainment,2668.85
+1419,Faith Koech,Healthcare,7644.31
+1419,Faith Koech,Education,57384.08
+1419,Faith Koech,Savings Deposit,9176.67
+1419,Faith Koech,Loan Repayment,12491.15
+1456,James Mutiso,Rent,72687.66
+1456,James Mutiso,Groceries,28691.34
+1456,James Mutiso,Transport,26657.85
+1456,James Mutiso,Utilities,13408.71
+1456,James Mutiso,Internet,44903.6
+1456,James Mutiso,Eating Out,8650.13
+1456,James Mutiso,Entertainment,7868.23
+1456,James Mutiso,Healthcare,15823.52
+1456,James Mutiso,Education,67273.36
+1456,James Mutiso,Airtime & Data,29376.56
+1456,James Mutiso,Savings Deposit,44947.73
+1456,James Mutiso,Loan Repayment,23878.75
+1511,Wanja Mwangi,Groceries,32471.77
+1511,Wanja Mwangi,Transport,30539.61
+1511,Wanja Mwangi,Utilities,25198.42
+1511,Wanja Mwangi,Internet,20669.4
+1511,Wanja Mwangi,Eating Out,41746.9
+1511,Wanja Mwangi,Entertainment,64343.73
+1511,Wanja Mwangi,Healthcare,39900.24
+1511,Wanja Mwangi,Education,21468.31
+1511,Wanja Mwangi,Airtime & Data,5732.04
+1511,Wanja Mwangi,Savings Deposit,19044.57
+1511,Wanja Mwangi,Loan Repayment,29306.21
+1571,George Chebet,Rent,10228.35
+1571,George Chebet,Groceries,1643.0
+1571,George Chebet,Utilities,43279.41
+1571,George Chebet,Internet,10837.33
+1571,George Chebet,Eating Out,328.61
+1571,George Chebet,Entertainment,11398.75
+1571,George Chebet,Healthcare,44443.29
+1571,George Chebet,Education,50677.21
+1571,George Chebet,Airtime & Data,46226.74
+1571,George Chebet,Savings Deposit,38838.43
+1571,George Chebet,Loan Repayment,24060.22
+1636,Sammy Chebet,Rent,30690.36
+1636,Sammy Chebet,Groceries,27502.49
+1636,Sammy Chebet,Transport,19338.29
+1636,Sammy Chebet,Utilities,5128.79
+1636,Sammy Chebet,Internet,34764.39
+1636,Sammy Chebet,Eating Out,96350.63
+1636,Sammy Chebet,Entertainment,18458.23
+1636,Sammy Chebet,Healthcare,12004.94
+1636,Sammy Chebet,Education,30542.39
+1636,Sammy Chebet,Airtime & Data,13277.43
+1636,Sammy Chebet,Savings Deposit,8944.07
+1636,Sammy Chebet,Loan Repayment,62832.28
+1653,Mercy Mwangi,Rent,45231.08
+1653,Mercy Mwangi,Groceries,31720.09
+1653,Mercy Mwangi,Transport,40431.11
+1653,Mercy Mwangi,Utilities,9231.34
+1653,Mercy Mwangi,Internet,43554.85
+1653,Mercy Mwangi,Eating Out,248.29
+1653,Mercy Mwangi,Entertainment,6170.14
+1653,Mercy Mwangi,Healthcare,18616.56
+1653,Mercy Mwangi,Education,24821.61
+1653,Mercy Mwangi,Airtime & Data,25952.73
+1653,Mercy Mwangi,Savings Deposit,53864.56
+1653,Mercy Mwangi,Loan Repayment,5450.0
+1787,Tom Kilonzo,Rent,60648.61
+1787,Tom Kilonzo,Groceries,27801.42
+1787,Tom Kilonzo,Transport,14662.19
+1787,Tom Kilonzo,Utilities,23713.3
+1787,Tom Kilonzo,Internet,86454.17
+1787,Tom Kilonzo,Eating Out,12223.54
+1787,Tom Kilonzo,Entertainment,8470.33
+1787,Tom Kilonzo,Healthcare,38232.76
+1787,Tom Kilonzo,Education,30962.59
+1787,Tom Kilonzo,Airtime & Data,35989.14
+1787,Tom Kilonzo,Savings Deposit,21557.5
+1787,Tom Kilonzo,Loan Repayment,17664.52
+1814,Cynthia Njoroge,Rent,44524.03
+1814,Cynthia Njoroge,Groceries,26321.7
+1814,Cynthia Njoroge,Transport,34279.87
+1814,Cynthia Njoroge,Utilities,21789.38
+1814,Cynthia Njoroge,Internet,16615.99
+1814,Cynthia Njoroge,Eating Out,71396.26
+1814,Cynthia Njoroge,Entertainment,8766.84
+1814,Cynthia Njoroge,Healthcare,20060.91
+1814,Cynthia Njoroge,Education,29453.35
+1814,Cynthia Njoroge,Airtime & Data,2057.56
+1814,Cynthia Njoroge,Savings Deposit,11544.08
+1814,Cynthia Njoroge,Loan Repayment,29827.53
+1881,John Koech,Rent,12213.01
+1881,John Koech,Groceries,24674.67
+1881,John Koech,Transport,21484.69
+1881,John Koech,Utilities,18854.93
+1881,John Koech,Internet,18698.58
+1881,John Koech,Entertainment,27269.09
+1881,John Koech,Healthcare,13743.28
+1881,John Koech,Education,65215.28
+1881,John Koech,Airtime & Data,24823.55
+1881,John Koech,Savings Deposit,12751.45
+1881,John Koech,Loan Repayment,7166.53
+1895,Aisha Otieno,Rent,30060.56
+1895,Aisha Otieno,Groceries,33924.75
+1895,Aisha Otieno,Transport,19647.37
+1895,Aisha Otieno,Utilities,59496.07
+1895,Aisha Otieno,Internet,33799.73
+1895,Aisha Otieno,Eating Out,57571.75
+1895,Aisha Otieno,Entertainment,47116.04
+1895,Aisha Otieno,Healthcare,11772.66
+1895,Aisha Otieno,Education,66610.82
+1895,Aisha Otieno,Airtime & Data,15183.53
+1895,Aisha Otieno,Savings Deposit,33966.23
+1895,Aisha Otieno,Loan Repayment,36440.32
+1902,Mary Mutiso,Rent,41055.79
+1902,Mary Mutiso,Groceries,61079.26
+1902,Mary Mutiso,Transport,49571.07
+1902,Mary Mutiso,Utilities,11219.12
+1902,Mary Mutiso,Internet,7829.1
+1902,Mary Mutiso,Eating Out,42211.36
+1902,Mary Mutiso,Entertainment,31990.86
+1902,Mary Mutiso,Healthcare,32117.27
+1902,Mary Mutiso,Education,93852.72
+1902,Mary Mutiso,Airtime & Data,685.05
+1902,Mary Mutiso,Savings Deposit,71450.37
+1902,Mary Mutiso,Loan Repayment,47996.21
+1914,Faith Mutiso,Rent,50721.62
+1914,Faith Mutiso,Groceries,14567.19
+1914,Faith Mutiso,Transport,25424.69
+1914,Faith Mutiso,Utilities,11488.15
+1914,Faith Mutiso,Internet,1555.36
+1914,Faith Mutiso,Eating Out,1635.26
+1914,Faith Mutiso,Entertainment,31881.5
+1914,Faith Mutiso,Healthcare,39329.66
+1914,Faith Mutiso,Education,22010.35
+1914,Faith Mutiso,Airtime & Data,23287.07
+1914,Faith Mutiso,Savings Deposit,44628.43
+1914,Faith Mutiso,Loan Repayment,27689.38
+1952,Kevin Mutiso,Rent,31394.97
+1952,Kevin Mutiso,Groceries,52856.46
+1952,Kevin Mutiso,Transport,37890.1
+1952,Kevin Mutiso,Utilities,24013.87
+1952,Kevin Mutiso,Internet,1513.45
+1952,Kevin Mutiso,Eating Out,40340.68
+1952,Kevin Mutiso,Entertainment,17287.62
+1952,Kevin Mutiso,Healthcare,29184.82
+1952,Kevin Mutiso,Education,2205.11
+1952,Kevin Mutiso,Savings Deposit,55448.51
+1952,Kevin Mutiso,Loan Repayment,37512.52
+2003,Eric Mwangi,Rent,40707.66
+2003,Eric Mwangi,Groceries,22674.91
+2003,Eric Mwangi,Transport,44411.09
+2003,Eric Mwangi,Utilities,16164.82
+2003,Eric Mwangi,Internet,20228.79
+2003,Eric Mwangi,Eating Out,30274.36
+2003,Eric Mwangi,Healthcare,20400.48
+2003,Eric Mwangi,Education,10848.79
+2003,Eric Mwangi,Airtime & Data,10739.34
+2003,Eric Mwangi,Savings Deposit,7640.7
+2083,Wanja Ochieng,Groceries,7925.45
+2083,Wanja Ochieng,Transport,15624.53
+2083,Wanja Ochieng,Utilities,15229.32
+2083,Wanja Ochieng,Internet,10657.75
+2083,Wanja Ochieng,Eating Out,30145.88
+2083,Wanja Ochieng,Entertainment,37258.24
+2083,Wanja Ochieng,Healthcare,15626.74
+2083,Wanja Ochieng,Education,48877.4
+2083,Wanja Ochieng,Airtime & Data,7131.99
+2083,Wanja Ochieng,Loan Repayment,24057.46
+2126,Sammy Ochieng,Groceries,7984.51
+2126,Sammy Ochieng,Transport,19259.37
+2126,Sammy Ochieng,Eating Out,16310.57
+2126,Sammy Ochieng,Entertainment,17903.54
+2126,Sammy Ochieng,Healthcare,20675.41
+2126,Sammy Ochieng,Education,25730.6
+2126,Sammy Ochieng,Airtime & Data,10968.78
+2126,Sammy Ochieng,Savings Deposit,28728.47
+2126,Sammy Ochieng,Loan Repayment,12078.05
+2138,Grace Wafula,Rent,23197.02
+2138,Grace Wafula,Groceries,17531.72
+2138,Grace Wafula,Transport,42084.97
+2138,Grace Wafula,Utilities,24692.57
+2138,Grace Wafula,Eating Out,30723.39
+2138,Grace Wafula,Entertainment,14452.77
+2138,Grace Wafula,Healthcare,22730.54
+2138,Grace Wafula,Education,12765.5
+2138,Grace Wafula,Airtime & Data,44743.99
+2138,Grace Wafula,Savings Deposit,34383.97
+2138,Grace Wafula,Loan Repayment,38694.3
+2139,Eric Mwangi,Rent,42227.06
+2139,Eric Mwangi,Groceries,25132.12
+2139,Eric Mwangi,Transport,7375.05
+2139,Eric Mwangi,Utilities,67785.36
+2139,Eric Mwangi,Internet,24396.92
+2139,Eric Mwangi,Eating Out,26981.99
+2139,Eric Mwangi,Entertainment,53454.71
+2139,Eric Mwangi,Healthcare,51778.59
+2139,Eric Mwangi,Education,23628.65
+2139,Eric Mwangi,Airtime & Data,19602.25
+2139,Eric Mwangi,Savings Deposit,2896.44
+2139,Eric Mwangi,Loan Repayment,28443.69
+2200,Sammy Ouma,Rent,28642.32
+2200,Sammy Ouma,Groceries,8156.53
+2200,Sammy Ouma,Internet,44000.12
+2200,Sammy Ouma,Entertainment,55907.13
+2200,Sammy Ouma,Healthcare,1991.26
+2200,Sammy Ouma,Education,14842.22
+2200,Sammy Ouma,Airtime & Data,8231.0
+2200,Sammy Ouma,Savings Deposit,14434.39
+2200,Sammy Ouma,Loan Repayment,28036.0
+2378,Ann Kamau,Rent,30325.02
+2378,Ann Kamau,Groceries,18162.59
+2378,Ann Kamau,Utilities,18776.58
+2378,Ann Kamau,Internet,10622.66
+2378,Ann Kamau,Eating Out,34869.96
+2378,Ann Kamau,Healthcare,19735.15
+2378,Ann Kamau,Education,8183.16
+2378,Ann Kamau,Airtime & Data,17973.86
+2378,Ann Kamau,Savings Deposit,31218.46
+2378,Ann Kamau,Loan Repayment,19467.07
+2393,Ruth Ochieng,Rent,65780.81
+2393,Ruth Ochieng,Groceries,34275.16
+2393,Ruth Ochieng,Transport,59043.51
+2393,Ruth Ochieng,Utilities,16794.12
+2393,Ruth Ochieng,Internet,38143.07
+2393,Ruth Ochieng,Eating Out,55354.64
+2393,Ruth Ochieng,Entertainment,7956.08
+2393,Ruth Ochieng,Healthcare,61482.82
+2393,Ruth Ochieng,Education,46894.9
+2393,Ruth Ochieng,Airtime & Data,65049.91
+2393,Ruth Ochieng,Savings Deposit,2606.38
+2393,Ruth Ochieng,Loan Repayment,19571.34
+2408,Jane Njoroge,Rent,6408.83
+2408,Jane Njoroge,Groceries,85412.57
+2408,Jane Njoroge,Transport,14691.52
+2408,Jane Njoroge,Utilities,51143.95
+2408,Jane Njoroge,Internet,54622.98
+2408,Jane Njoroge,Eating Out,10474.83
+2408,Jane Njoroge,Entertainment,5363.92
+2408,Jane Njoroge,Healthcare,28558.14
+2408,Jane Njoroge,Education,6222.33
+2408,Jane Njoroge,Airtime & Data,49287.45
+2408,Jane Njoroge,Loan Repayment,18257.09
+2470,David Kariuki,Rent,6481.2
+2470,David Kariuki,Groceries,17420.62
+2470,David Kariuki,Transport,3054.53
+2470,David Kariuki,Utilities,47102.66
+2470,David Kariuki,Internet,34663.2
+2470,David Kariuki,Eating Out,21530.5
+2470,David Kariuki,Entertainment,24320.55
+2470,David Kariuki,Healthcare,23667.31
+2470,David Kariuki,Education,21574.13
+2470,David Kariuki,Airtime & Data,24273.25
+2470,David Kariuki,Savings Deposit,58275.76
+2470,David Kariuki,Loan Repayment,36856.25
+2481,Joy Wafula,Groceries,24009.11
+2481,Joy Wafula,Transport,14880.26
+2481,Joy Wafula,Internet,80244.58
+2481,Joy Wafula,Eating Out,26965.33
+2481,Joy Wafula,Healthcare,17110.03
+2481,Joy Wafula,Education,37089.26
+2481,Joy Wafula,Airtime & Data,1927.9
+2481,Joy Wafula,Savings Deposit,20757.22
+2481,Joy Wafula,Loan Repayment,2568.89
+2550,Daniel Mutua,Rent,47429.03
+2550,Daniel Mutua,Groceries,15895.17
+2550,Daniel Mutua,Transport,30072.99
+2550,Daniel Mutua,Utilities,21932.41
+2550,Daniel Mutua,Internet,76520.63
+2550,Daniel Mutua,Eating Out,22379.33
+2550,Daniel Mutua,Entertainment,26781.98
+2550,Daniel Mutua,Healthcare,46747.3
+2550,Daniel Mutua,Education,59456.27
+2550,Daniel Mutua,Airtime & Data,18850.87
+2550,Daniel Mutua,Savings Deposit,42091.68
+2550,Daniel Mutua,Loan Repayment,29261.58
+2556,David Otieno,Rent,65748.54
+2556,David Otieno,Groceries,14097.28
+2556,David Otieno,Transport,35190.09
+2556,David Otieno,Utilities,56540.88
+2556,David Otieno,Internet,20016.45
+2556,David Otieno,Eating Out,32733.32
+2556,David Otieno,Entertainment,37059.57
+2556,David Otieno,Healthcare,17791.45
+2556,David Otieno,Airtime & Data,26100.22
+2556,David Otieno,Savings Deposit,16477.15
+2556,David Otieno,Loan Repayment,52849.03
+2718,George Koech,Rent,58434.95
+2718,George Koech,Groceries,43066.23
+2718,George Koech,Transport,78150.67
+2718,George Koech,Utilities,49307.56
+2718,George Koech,Internet,32195.95
+2718,George Koech,Eating Out,42509.85
+2718,George Koech,Entertainment,22197.02
+2718,George Koech,Healthcare,33221.03
+2718,George Koech,Education,59787.67
+2718,George Koech,Airtime & Data,11944.14
+2718,George Koech,Savings Deposit,38296.53
+2718,George Koech,Loan Repayment,38967.01
+2728,Sammy Chebet,Rent,8201.82
+2728,Sammy Chebet,Groceries,9603.74
+2728,Sammy Chebet,Transport,32073.17
+2728,Sammy Chebet,Utilities,42517.31
+2728,Sammy Chebet,Internet,52951.37
+2728,Sammy Chebet,Eating Out,8661.35
+2728,Sammy Chebet,Entertainment,26916.48
+2728,Sammy Chebet,Healthcare,6876.88
+2728,Sammy Chebet,Education,31570.77
+2728,Sammy Chebet,Airtime & Data,10437.06
+2728,Sammy Chebet,Savings Deposit,38730.41
+2728,Sammy Chebet,Loan Repayment,23623.82
+2731,Grace Chebet,Rent,14815.16
+2731,Grace Chebet,Groceries,21650.06
+2731,Grace Chebet,Transport,23051.61
+2731,Grace Chebet,Utilities,54234.01
+2731,Grace Chebet,Internet,7176.3
+2731,Grace Chebet,Eating Out,7928.8
+2731,Grace Chebet,Entertainment,33302.91
+2731,Grace Chebet,Healthcare,61225.47
+2731,Grace Chebet,Education,23588.05
+2731,Grace Chebet,Airtime & Data,30531.68
+2731,Grace Chebet,Savings Deposit,13829.75
+2731,Grace Chebet,Loan Repayment,11880.93
+2839,Naomi Chebet,Rent,31048.03
+2839,Naomi Chebet,Groceries,16086.36
+2839,Naomi Chebet,Transport,21097.21
+2839,Naomi Chebet,Utilities,71807.81
+2839,Naomi Chebet,Internet,29272.73
+2839,Naomi Chebet,Eating Out,7226.61
+2839,Naomi Chebet,Entertainment,46290.14
+2839,Naomi Chebet,Healthcare,12638.04
+2839,Naomi Chebet,Airtime & Data,53390.62
+2839,Naomi Chebet,Savings Deposit,17887.08
+2839,Naomi Chebet,Loan Repayment,63365.68
+2881,Ann Mutua,Rent,42347.45
+2881,Ann Mutua,Groceries,31945.69
+2881,Ann Mutua,Transport,9090.61
+2881,Ann Mutua,Utilities,34840.38
+2881,Ann Mutua,Internet,66725.91
+2881,Ann Mutua,Eating Out,36251.2
+2881,Ann Mutua,Entertainment,53405.5
+2881,Ann Mutua,Healthcare,31690.55
+2881,Ann Mutua,Education,35585.74
+2881,Ann Mutua,Airtime & Data,10008.71
+2881,Ann Mutua,Loan Repayment,22328.15
+3069,Michael Njoroge,Rent,24180.6
+3069,Michael Njoroge,Groceries,25815.87
+3069,Michael Njoroge,Transport,20804.08
+3069,Michael Njoroge,Utilities,4681.92
+3069,Michael Njoroge,Internet,59079.78
+3069,Michael Njoroge,Eating Out,46259.35
+3069,Michael Njoroge,Entertainment,25037.39
+3069,Michael Njoroge,Healthcare,32595.97
+3069,Michael Njoroge,Education,24328.72
+3069,Michael Njoroge,Airtime & Data,17435.35
+3069,Michael Njoroge,Savings Deposit,31596.12
+3069,Michael Njoroge,Loan Repayment,3393.08
+3196,Linet Wafula,Transport,45405.89
+3196,Linet Wafula,Utilities,35239.35
+3196,Linet Wafula,Internet,25585.11
+3196,Linet Wafula,Eating Out,61298.75
+3196,Linet Wafula,Entertainment,65779.88
+3196,Linet Wafula,Healthcare,20541.15
+3196,Linet Wafula,Education,32616.87
+3196,Linet Wafula,Airtime & Data,72873.08
+3196,Linet Wafula,Savings Deposit,35955.84
+3196,Linet Wafula,Loan Repayment,50474.33
+3232,Mary Wafula,Rent,18248.37
+3232,Mary Wafula,Groceries,15118.18
+3232,Mary Wafula,Transport,33095.15
+3232,Mary Wafula,Utilities,34218.91
+3232,Mary Wafula,Internet,10820.79
+3232,Mary Wafula,Eating Out,18090.63
+3232,Mary Wafula,Entertainment,17195.83
+3232,Mary Wafula,Healthcare,25193.33
+3232,Mary Wafula,Airtime & Data,36288.64
+3232,Mary Wafula,Savings Deposit,30706.19
+3232,Mary Wafula,Loan Repayment,35643.22
+3233,Grace Kariuki,Rent,42897.97
+3233,Grace Kariuki,Groceries,43690.83
+3233,Grace Kariuki,Transport,34702.55
+3233,Grace Kariuki,Utilities,27964.47
+3233,Grace Kariuki,Internet,18366.49
+3233,Grace Kariuki,Entertainment,18799.56
+3233,Grace Kariuki,Healthcare,1696.3
+3233,Grace Kariuki,Education,27125.77
+3233,Grace Kariuki,Airtime & Data,10011.71
+3233,Grace Kariuki,Savings Deposit,27243.18
+3233,Grace Kariuki,Loan Repayment,12626.88
+3261,Ann Mwangi,Rent,30796.81
+3261,Ann Mwangi,Groceries,15452.36
+3261,Ann Mwangi,Transport,31530.09
+3261,Ann Mwangi,Utilities,37669.84
+3261,Ann Mwangi,Internet,77138.82
+3261,Ann Mwangi,Eating Out,28551.71
+3261,Ann Mwangi,Entertainment,34399.54
+3261,Ann Mwangi,Healthcare,47962.18
+3261,Ann Mwangi,Education,33280.18
+3261,Ann Mwangi,Savings Deposit,29297.2
+3261,Ann Mwangi,Loan Repayment,64605.72
+3298,Mwende Mwangi,Rent,13512.58
+3298,Mwende Mwangi,Groceries,23349.08
+3298,Mwende Mwangi,Transport,31966.37
+3298,Mwende Mwangi,Internet,13422.45
+3298,Mwende Mwangi,Eating Out,60506.77
+3298,Mwende Mwangi,Entertainment,9073.98
+3298,Mwende Mwangi,Healthcare,36717.73
+3298,Mwende Mwangi,Education,9779.42
+3298,Mwende Mwangi,Airtime & Data,15812.24
+3298,Mwende Mwangi,Savings Deposit,3641.24
+3364,Mwende Chebet,Groceries,16695.13
+3364,Mwende Chebet,Transport,28599.21
+3364,Mwende Chebet,Utilities,26054.99
+3364,Mwende Chebet,Internet,13908.17
+3364,Mwende Chebet,Eating Out,10520.43
+3364,Mwende Chebet,Entertainment,13215.01
+3364,Mwende Chebet,Healthcare,10506.09
+3364,Mwende Chebet,Education,28942.62
+3364,Mwende Chebet,Airtime & Data,8258.31
+3364,Mwende Chebet,Savings Deposit,3646.78
+3364,Mwende Chebet,Loan Repayment,53904.52
+3413,Grace Ouma,Rent,2248.52
+3413,Grace Ouma,Transport,32252.46
+3413,Grace Ouma,Utilities,22081.79
+3413,Grace Ouma,Internet,52310.32
+3413,Grace Ouma,Eating Out,54528.65
+3413,Grace Ouma,Entertainment,39063.96
+3413,Grace Ouma,Healthcare,20907.39
+3413,Grace Ouma,Education,45918.39
+3413,Grace Ouma,Airtime & Data,19980.99
+3413,Grace Ouma,Savings Deposit,38066.88
+3413,Grace Ouma,Loan Repayment,4506.87
+3418,Brenda Otieno,Rent,26631.19
+3418,Brenda Otieno,Groceries,27160.07
+3418,Brenda Otieno,Transport,31911.23
+3418,Brenda Otieno,Utilities,40665.13
+3418,Brenda Otieno,Internet,40684.13
+3418,Brenda Otieno,Eating Out,34941.39
+3418,Brenda Otieno,Entertainment,9582.94
+3418,Brenda Otieno,Healthcare,22265.87
+3418,Brenda Otieno,Education,5859.19
+3418,Brenda Otieno,Airtime & Data,48953.69
+3418,Brenda Otieno,Savings Deposit,38644.53
+3418,Brenda Otieno,Loan Repayment,2589.7
+3465,Kevin Kamau,Rent,19448.49
+3465,Kevin Kamau,Groceries,46588.01
+3465,Kevin Kamau,Transport,42688.41
+3465,Kevin Kamau,Utilities,23715.96
+3465,Kevin Kamau,Internet,41702.16
+3465,Kevin Kamau,Eating Out,41974.59
+3465,Kevin Kamau,Entertainment,38674.32
+3465,Kevin Kamau,Healthcare,29648.54
+3465,Kevin Kamau,Education,55221.54
+3465,Kevin Kamau,Airtime & Data,47266.4
+3465,Kevin Kamau,Savings Deposit,13518.3
+3465,Kevin Kamau,Loan Repayment,27303.54
+3472,Daniel Koech,Rent,28118.46
+3472,Daniel Koech,Groceries,68442.2
+3472,Daniel Koech,Utilities,3309.25
+3472,Daniel Koech,Internet,53814.86
+3472,Daniel Koech,Eating Out,3897.17
+3472,Daniel Koech,Entertainment,20074.93
+3472,Daniel Koech,Healthcare,12134.88
+3472,Daniel Koech,Education,50375.78
+3472,Daniel Koech,Airtime & Data,8339.6
+3472,Daniel Koech,Savings Deposit,33213.2
+3472,Daniel Koech,Loan Repayment,1043.01
+3533,Tom Chebet,Rent,33182.91
+3533,Tom Chebet,Groceries,12868.2
+3533,Tom Chebet,Transport,32482.28
+3533,Tom Chebet,Utilities,29599.47
+3533,Tom Chebet,Internet,51119.71
+3533,Tom Chebet,Eating Out,9456.23
+3533,Tom Chebet,Entertainment,26285.72
+3533,Tom Chebet,Healthcare,27557.76
+3533,Tom Chebet,Education,23479.81
+3533,Tom Chebet,Airtime & Data,48526.41
+3533,Tom Chebet,Savings Deposit,34091.49
+3533,Tom Chebet,Loan Repayment,30899.82
+3574,David Obiero,Groceries,11824.8
+3574,David Obiero,Transport,46203.77
+3574,David Obiero,Utilities,28379.84
+3574,David Obiero,Internet,9510.51
+3574,David Obiero,Eating Out,21928.8
+3574,David Obiero,Entertainment,50026.83
+3574,David Obiero,Healthcare,54634.61
+3574,David Obiero,Education,33283.51
+3574,David Obiero,Airtime & Data,9365.92
+3574,David Obiero,Savings Deposit,6900.95
+3574,David Obiero,Loan Repayment,23311.73
+3619,Mwende Ochieng,Groceries,38117.88
+3619,Mwende Ochieng,Utilities,20010.15
+3619,Mwende Ochieng,Eating Out,12338.57
+3619,Mwende Ochieng,Airtime & Data,35988.37
+3619,Mwende Ochieng,Savings Deposit,43281.39
+3619,Mwende Ochieng,Loan Repayment,18487.56
+3661,Terry Otieno,Rent,75327.72
+3661,Terry Otieno,Groceries,26630.82
+3661,Terry Otieno,Transport,42906.42
+3661,Terry Otieno,Utilities,31187.06
+3661,Terry Otieno,Internet,38457.7
+3661,Terry Otieno,Eating Out,33279.51
+3661,Terry Otieno,Entertainment,30451.2
+3661,Terry Otieno,Healthcare,20983.51
+3661,Terry Otieno,Education,60363.45
+3661,Terry Otieno,Airtime & Data,42664.53
+3661,Terry Otieno,Savings Deposit,45318.15
+3661,Terry Otieno,Loan Repayment,30060.42
+3771,Aisha Mwangi,Rent,11826.73
+3771,Aisha Mwangi,Groceries,46222.79
+3771,Aisha Mwangi,Transport,31393.43
+3771,Aisha Mwangi,Utilities,50559.26
+3771,Aisha Mwangi,Internet,24205.92
+3771,Aisha Mwangi,Eating Out,10639.61
+3771,Aisha Mwangi,Entertainment,12577.77
+3771,Aisha Mwangi,Healthcare,25709.35
+3771,Aisha Mwangi,Education,11220.63
+3771,Aisha Mwangi,Airtime & Data,25992.62
+3771,Aisha Mwangi,Savings Deposit,9869.02
+3771,Aisha Mwangi,Loan Repayment,913.86
+3859,Terry Kariuki,Rent,15868.06
+3859,Terry Kariuki,Groceries,20627.59
+3859,Terry Kariuki,Transport,16477.92
+3859,Terry Kariuki,Utilities,17906.1
+3859,Terry Kariuki,Internet,18886.34
+3859,Terry Kariuki,Entertainment,28325.29
+3859,Terry Kariuki,Healthcare,17327.77
+3859,Terry Kariuki,Airtime & Data,75391.67
+3859,Terry Kariuki,Loan Repayment,15661.85
+3872,Grace Ochieng,Rent,21656.78
+3872,Grace Ochieng,Groceries,20115.78
+3872,Grace Ochieng,Transport,33832.29
+3872,Grace Ochieng,Utilities,43849.43
+3872,Grace Ochieng,Internet,31695.99
+3872,Grace Ochieng,Eating Out,4081.14
+3872,Grace Ochieng,Entertainment,74003.78
+3872,Grace Ochieng,Healthcare,13512.97
+3872,Grace Ochieng,Education,6608.14
+3872,Grace Ochieng,Airtime & Data,29755.89
+3872,Grace Ochieng,Savings Deposit,54522.76
+3872,Grace Ochieng,Loan Repayment,10625.38
+3932,Aisha Kilonzo,Rent,37183.84
+3932,Aisha Kilonzo,Groceries,4383.44
+3932,Aisha Kilonzo,Transport,83373.55
+3932,Aisha Kilonzo,Utilities,48609.23
+3932,Aisha Kilonzo,Internet,24725.95
+3932,Aisha Kilonzo,Eating Out,9327.48
+3932,Aisha Kilonzo,Entertainment,7557.87
+3932,Aisha Kilonzo,Healthcare,19100.96
+3932,Aisha Kilonzo,Education,74458.48
+3932,Aisha Kilonzo,Airtime & Data,47993.65
+3932,Aisha Kilonzo,Savings Deposit,25185.04
+3932,Aisha Kilonzo,Loan Repayment,67567.13
+3988,Joy Koech,Rent,11763.15
+3988,Joy Koech,Groceries,19083.0
+3988,Joy Koech,Transport,35831.23
+3988,Joy Koech,Utilities,15711.88
+3988,Joy Koech,Internet,44962.34
+3988,Joy Koech,Healthcare,13489.23
+3988,Joy Koech,Airtime & Data,3702.16
+3988,Joy Koech,Savings Deposit,21021.59
+4016,Peter Wafula,Rent,25692.1
+4016,Peter Wafula,Groceries,28808.02
+4016,Peter Wafula,Transport,7952.02
+4016,Peter Wafula,Utilities,24706.2
+4016,Peter Wafula,Internet,38371.77
+4016,Peter Wafula,Eating Out,16176.43
+4016,Peter Wafula,Entertainment,39036.12
+4016,Peter Wafula,Healthcare,3137.5
+4016,Peter Wafula,Education,19108.2
+4016,Peter Wafula,Airtime & Data,46910.23
+4016,Peter Wafula,Savings Deposit,12625.42
+4016,Peter Wafula,Loan Repayment,22799.05
+4033,Wanja Otieno,Rent,15199.22
+4033,Wanja Otieno,Groceries,40370.46
+4033,Wanja Otieno,Transport,37000.09
+4033,Wanja Otieno,Utilities,52892.38
+4033,Wanja Otieno,Internet,18054.29
+4033,Wanja Otieno,Entertainment,17072.87
+4033,Wanja Otieno,Healthcare,10631.55
+4033,Wanja Otieno,Education,23997.03
+4033,Wanja Otieno,Airtime & Data,24615.77
+4033,Wanja Otieno,Savings Deposit,19604.91
+4033,Wanja Otieno,Loan Repayment,45744.27
+4037,Kevin Njoroge,Rent,31657.4
+4037,Kevin Njoroge,Groceries,17132.68
+4037,Kevin Njoroge,Transport,1418.07
+4037,Kevin Njoroge,Internet,5771.7
+4037,Kevin Njoroge,Eating Out,18525.51
+4037,Kevin Njoroge,Entertainment,27375.32
+4037,Kevin Njoroge,Healthcare,13605.96
+4037,Kevin Njoroge,Airtime & Data,44479.76
+4037,Kevin Njoroge,Savings Deposit,25200.03
+4037,Kevin Njoroge,Loan Repayment,47315.1
+4108,Ian Ochieng,Groceries,24236.33
+4108,Ian Ochieng,Transport,49234.52
+4108,Ian Ochieng,Utilities,8891.64
+4108,Ian Ochieng,Internet,5608.65
+4108,Ian Ochieng,Eating Out,21584.04
+4108,Ian Ochieng,Entertainment,18665.31
+4108,Ian Ochieng,Education,28355.98
+4108,Ian Ochieng,Savings Deposit,11174.47
+4108,Ian Ochieng,Loan Repayment,13041.18
+4127,Tom Kariuki,Rent,37735.88
+4127,Tom Kariuki,Groceries,1436.33
+4127,Tom Kariuki,Transport,27257.7
+4127,Tom Kariuki,Internet,29280.92
+4127,Tom Kariuki,Eating Out,20596.64
+4127,Tom Kariuki,Entertainment,28744.76
+4127,Tom Kariuki,Education,17843.08
+4127,Tom Kariuki,Airtime & Data,18042.6
+4127,Tom Kariuki,Savings Deposit,26553.27
+4127,Tom Kariuki,Loan Repayment,13965.01
+4300,Faith Mwangi,Rent,24598.76
+4300,Faith Mwangi,Groceries,25743.5
+4300,Faith Mwangi,Transport,45754.61
+4300,Faith Mwangi,Utilities,21262.79
+4300,Faith Mwangi,Internet,46319.87
+4300,Faith Mwangi,Eating Out,23877.94
+4300,Faith Mwangi,Entertainment,33865.14
+4300,Faith Mwangi,Healthcare,9765.74
+4300,Faith Mwangi,Education,32692.82
+4300,Faith Mwangi,Airtime & Data,48943.61
+4300,Faith Mwangi,Savings Deposit,28362.69
+4300,Faith Mwangi,Loan Repayment,18974.04
+4305,Ann Ouma,Rent,8621.57
+4305,Ann Ouma,Groceries,31870.61
+4305,Ann Ouma,Transport,51306.56
+4305,Ann Ouma,Utilities,32614.82
+4305,Ann Ouma,Internet,48259.6
+4305,Ann Ouma,Eating Out,11960.24
+4305,Ann Ouma,Entertainment,72575.71
+4305,Ann Ouma,Healthcare,706.12
+4305,Ann Ouma,Education,33449.15
+4305,Ann Ouma,Airtime & Data,11265.83
+4305,Ann Ouma,Savings Deposit,65031.78
+4305,Ann Ouma,Loan Repayment,24806.37
+4315,Cynthia Obiero,Rent,62746.74
+4315,Cynthia Obiero,Groceries,34226.96
+4315,Cynthia Obiero,Transport,42331.65
+4315,Cynthia Obiero,Internet,59317.86
+4315,Cynthia Obiero,Eating Out,56440.22
+4315,Cynthia Obiero,Entertainment,67008.97
+4315,Cynthia Obiero,Healthcare,6834.06
+4315,Cynthia Obiero,Education,40222.76
+4315,Cynthia Obiero,Airtime & Data,67228.18
+4315,Cynthia Obiero,Savings Deposit,77078.18
+4315,Cynthia Obiero,Loan Repayment,30626.19
+4397,Wanja Njoroge,Rent,50321.57
+4397,Wanja Njoroge,Groceries,28594.51
+4397,Wanja Njoroge,Transport,59710.26
+4397,Wanja Njoroge,Utilities,24682.78
+4397,Wanja Njoroge,Internet,24385.78
+4397,Wanja Njoroge,Eating Out,33430.95
+4397,Wanja Njoroge,Entertainment,35294.01
+4397,Wanja Njoroge,Healthcare,28534.47
+4397,Wanja Njoroge,Education,82055.83
+4397,Wanja Njoroge,Airtime & Data,20533.7
+4397,Wanja Njoroge,Savings Deposit,26988.34
+4397,Wanja Njoroge,Loan Repayment,2571.3
+4471,Tom Kamau,Rent,49830.49
+4471,Tom Kamau,Groceries,33897.68
+4471,Tom Kamau,Transport,24919.82
+4471,Tom Kamau,Utilities,17957.95
+4471,Tom Kamau,Internet,9353.95
+4471,Tom Kamau,Eating Out,56384.13
+4471,Tom Kamau,Entertainment,28745.0
+4471,Tom Kamau,Healthcare,59423.75
+4471,Tom Kamau,Airtime & Data,26600.53
+4471,Tom Kamau,Savings Deposit,55445.95
+4471,Tom Kamau,Loan Repayment,9621.07
+4529,Joy Njoroge,Rent,33402.16
+4529,Joy Njoroge,Groceries,31137.24
+4529,Joy Njoroge,Transport,70503.88
+4529,Joy Njoroge,Utilities,21364.53
+4529,Joy Njoroge,Internet,11596.64
+4529,Joy Njoroge,Eating Out,10956.8
+4529,Joy Njoroge,Entertainment,31196.01
+4529,Joy Njoroge,Healthcare,41167.64
+4529,Joy Njoroge,Education,35595.83
+4529,Joy Njoroge,Airtime & Data,17418.96
+4529,Joy Njoroge,Savings Deposit,60454.98
+4560,Mercy Koech,Rent,30536.63
+4560,Mercy Koech,Groceries,77600.37
+4560,Mercy Koech,Transport,2327.36
+4560,Mercy Koech,Utilities,29222.86
+4560,Mercy Koech,Internet,28639.78
+4560,Mercy Koech,Eating Out,24605.1
+4560,Mercy Koech,Entertainment,72122.73
+4560,Mercy Koech,Healthcare,16934.1
+4560,Mercy Koech,Education,25634.83
+4560,Mercy Koech,Airtime & Data,16740.75
+4560,Mercy Koech,Savings Deposit,16633.83
+4560,Mercy Koech,Loan Repayment,11278.38
+4626,George Wafula,Rent,6231.06
+4626,George Wafula,Groceries,16323.6
+4626,George Wafula,Transport,16271.16
+4626,George Wafula,Utilities,64344.68
+4626,George Wafula,Internet,11729.63
+4626,George Wafula,Eating Out,3237.41
+4626,George Wafula,Entertainment,23494.68
+4626,George Wafula,Healthcare,19649.3
+4626,George Wafula,Airtime & Data,18810.76
+4626,George Wafula,Savings Deposit,15039.25
+4654,Daniel Wafula,Rent,14249.37
+4654,Daniel Wafula,Groceries,18840.91
+4654,Daniel Wafula,Transport,47829.17
+4654,Daniel Wafula,Internet,27734.31
+4654,Daniel Wafula,Eating Out,39868.77
+4654,Daniel Wafula,Entertainment,34245.78
+4654,Daniel Wafula,Healthcare,4356.02
+4654,Daniel Wafula,Education,14290.31
+4654,Daniel Wafula,Airtime & Data,34572.04
+4654,Daniel Wafula,Savings Deposit,45822.5
+4654,Daniel Wafula,Loan Repayment,33520.03
+4777,Ruth Koech,Rent,41026.57
+4777,Ruth Koech,Groceries,54269.43
+4777,Ruth Koech,Utilities,25754.93
+4777,Ruth Koech,Internet,79728.6
+4777,Ruth Koech,Eating Out,6654.93
+4777,Ruth Koech,Entertainment,33772.85
+4777,Ruth Koech,Healthcare,15084.85
+4777,Ruth Koech,Education,11529.02
+4777,Ruth Koech,Airtime & Data,37211.71
+4777,Ruth Koech,Savings Deposit,29357.92
+4777,Ruth Koech,Loan Repayment,15808.61
+4920,Brenda Kilonzo,Rent,58842.46
+4920,Brenda Kilonzo,Groceries,23483.86
+4920,Brenda Kilonzo,Transport,32198.16
+4920,Brenda Kilonzo,Utilities,22984.33
+4920,Brenda Kilonzo,Internet,24153.67
+4920,Brenda Kilonzo,Eating Out,28367.36
+4920,Brenda Kilonzo,Entertainment,28809.68
+4920,Brenda Kilonzo,Healthcare,5906.21
+4920,Brenda Kilonzo,Education,29376.71
+4920,Brenda Kilonzo,Airtime & Data,7710.55
+4920,Brenda Kilonzo,Savings Deposit,38064.43
+4920,Brenda Kilonzo,Loan Repayment,22462.35
+4985,Mwende Ouma,Rent,34990.04
+4985,Mwende Ouma,Groceries,16986.91
+4985,Mwende Ouma,Transport,29928.1
+4985,Mwende Ouma,Utilities,23635.84
+4985,Mwende Ouma,Internet,7149.71
+4985,Mwende Ouma,Eating Out,22568.81
+4985,Mwende Ouma,Entertainment,513.3
+4985,Mwende Ouma,Healthcare,364.04
+4985,Mwende Ouma,Education,34655.5
+4985,Mwende Ouma,Airtime & Data,12003.17
+4985,Mwende Ouma,Savings Deposit,36842.84
+4985,Mwende Ouma,Loan Repayment,18400.56
