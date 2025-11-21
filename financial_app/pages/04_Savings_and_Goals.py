@@ -5,8 +5,16 @@ import plotly.express as px
 st.set_page_config(
     page_title="Financial Dashboard",
     layout="wide",
-    initial_sidebar_state="expanded"
 )
+
+# HIDE STREAMLIT DEFAULT MULTIPAGE SIDEBAR
+st.markdown("""
+    <style>
+        section[data-testid="stSidebarNav"] {
+            display: none !important;
+        }
+    </style>
+""", unsafe_allow_html=True)
 
 # -------------------------------
 # Load Data
