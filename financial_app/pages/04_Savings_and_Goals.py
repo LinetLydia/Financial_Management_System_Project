@@ -2,6 +2,17 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
+# HIDE STREAMLIT DEFAULT MULTIPAGE SIDEBAR (all versions)
+st.markdown("""
+    <style>
+        /* Hide default sidebar nav */
+        section[data-testid="stSidebarNav"] {display: none !important;}
+        div[data-testid="stSidebarNavItems"] {display: none !important;}
+        div[data-testid="stSidebarNav"] {display: none !important;}
+    </style>
+""", unsafe_allow_html=True)
+
+
 st.set_page_config(
     page_title="Financial Dashboard",
     layout="wide",
