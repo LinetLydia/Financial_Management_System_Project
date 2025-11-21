@@ -34,7 +34,7 @@ col1, col2, col3 = st.columns(3)
 
 total_budget = df["budget_amount"].sum()
 total_actual = df["actual_spent"].sum()
-avg_util = df["utilization_percentage"].mean()
+avg_util = df["utilization"].mean()
 
 col1.metric("Total Budget", f"${total_budget:,.0f}")
 col2.metric("Total Actual Spending", f"${total_actual:,.0f}")
