@@ -1,153 +1,271 @@
-# Financial Management System (SQL + Python + Tableau)
+# **Financial Analytics Dashboard — SQL + Python + Streamlit**
 
-This project demonstrates the end-to-end development of a Financial Management System (FMS) using SQLite (SQL), Python, and Tableau Public.  
-The system stores income, expenses, budgets, and savings goals, and visualizes key financial insights through interactive dashboards.
+This repository contains an end-to-end **Financial Analytics System** designed to transform raw financial records into **clean, structured, and decision-ready insights**.  
+It integrates **data modeling**, **financial metric engineering**, **automated reporting**, and **interactive dashboards** across:
 
-## 1. Project Overview
+- A **Jupyter Notebook** for data preparation and modeling  
+- A **Streamlit multi-page application** for interactive analytics  
+- A **Tableau dashboard** for high-level executive summaries  
 
-The Financial Management System was designed to:
+The project demonstrates a complete workflow used in modern Finance Data teams:  
+**collect → clean → model → analyze → visualize → report**.
 
-- Store and organize financial transactions  
-- Track income and expenses across multiple categories  
-- Monitor monthly budgets and identify overspending  
-- Analyze spending trends and financial behavior  
-- Evaluate progress toward savings goals  
-- Generate visual financial summaries through Tableau
+---
 
-This project showcases skills in database design, SQL querying, Python-based data engineering, and Tableau dashboard development.
+## **1. Overview**
 
-## 2. Technologies Used
+This system provides a unified analytical experience for:
 
-- **Python:** sqlite3, pandas, datetime, random  
-- **SQLite Database**  
-- **Tableau Public** (interactive dashboards)  
-- **Jupyter Notebook**  
-- **Markdown** for documentation  
+- **Transforming raw financial datasets** into structured tables  
+- **Modeling user-level and category-level financial metrics**  
+- **Analyzing budgets, spending behavior, and utilization**  
+- **Generating automated visual reports**  
+- **Tracking savings progress and financial goal timelines**  
 
-## 3. Database Schema (ER Diagram)
+The architecture is optimized for **transparency, speed, reproducibility, and auditability**, reflecting real-world FP&A, finance engineering, and BI workflows.
 
-The Financial Management System uses six main tables:
+---
 
-1. **Users**  
-2. **Accounts**  
-3. **Categories**  
-4. **Transactions**  
-5. **Budgets**  
-6. **SavingsGoals**  
+# **2. Project Components (Notebook + App + Tableau)**
 
-These tables include primary keys, foreign keys, constraints, and appropriate relationships.
+## **2.1 Jupyter Notebook — Data Processing & Metric Engineering**  
+`index.ipynb`
 
-## 4. SQL & Python Pipeline
+The notebook acts as the **data engineering backbone** of the project. It:
 
-### 4.1 Schema Creation (Python + SQLite)
+- Cleans and validates raw transaction, budget, and savings datasets  
+- Performs SQL-style transformations using Pandas  
+- Computes key financial metrics (income, expenses, savings, utilization, goal progress)  
+- Standardizes date formats, categories, and classifications  
+- Produces analytics-ready CSV outputs consumed by the Streamlit app  
+- Documents each transformation step for traceability and reproducibility  
 
-All database tables were created using Python’s sqlite3 module.
+This ensures the project has a **clear, auditable data pipeline**, similar to production financial data workflows.
 
-**Example — Users Table**  
-```sql
-CREATE TABLE IF NOT EXISTS Users (
-    user_id INTEGER PRIMARY KEY,
-    name TEXT NOT NULL,
-    email TEXT UNIQUE NOT NULL
-);
+---
+
+## **2.2 Streamlit Application — Interactive Financial Dashboard**  
+`app.py` + `pages/`
+
+The Streamlit app is the primary **interactive analytics interface**.  
+Built with a **modular multi-page architecture**, it covers:
+
+### **• User Profile Intelligence (pages/01_User_Profile.py)**  
+- User-level metadata (occupation, city, annual income)  
+- Savings goal summaries  
+- On-track vs behind status scoring  
+
+### **• Transactions Explorer (pages/02_Transactions_Explorer.py)**  
+- SQL-like filtering and exploration (user → date → category → type)  
+- Time-series trend analysis  
+- Category-level aggregation  
+- Full raw table view for auditability  
+
+### **• Budget Analysis (pages/03_Budget_Analysis.py)**  
+- Budget vs actual comparisons  
+- Utilization rate calculations  
+- Category/month heatmaps  
+- Overspending alerts  
+- FP&A-style budgeting view  
+
+### **• Savings & Goals (pages/04_Savings_and_Goals.py)**  
+- Progress ratio charts  
+- Timeline visualizations (start → target date)  
+- Goal performance segmentation  
+- Savings KPIs  
+
+This component provides a **flexible, data-driven interface** for financial exploration.
+
+---
+
+## **2.3 Tableau Dashboard — Executive Overview**
+
+The accompanying Tableau dashboard provides:
+
+- High-level summaries  
+- Trend analysis  
+- Interactive filters  
+- Presentation-ready visuals  
+
+While the Streamlit app supports **detailed investigation**,  
+the Tableau dashboard supplies **board-level snapshots**, ideal for stakeholders.
+
+All modules share:
+
+- **Cache-optimized data loading (`@st.cache_data`)**  
+- **Reusable pipelines**  
+- **Consistent metrics and formatting**  
+
+The system can scale to warehouse-backed pipelines (PostgreSQL, BigQuery, Snowflake, dbt).
+
+---
+
+# **3. Technologies Used**
+
+### **Core Stack**
+- **Python 3.10+**  
+- **Streamlit 1.51.0**  
+- **Pandas 2.3.3**  
+- **Plotly Express 5.18.0**  
+- **NumPy**  
+- **Tableau Public**  
+
+### **Dependencies (requirements.txt)**
+- **streamlit==1.51.0**
+- **pandas==2.3.3**
+- **plotly==5.18.0**
+- **numpy**
+
+
+---
+
+# **4. Data Model & Key Metrics**
+
+The system models several financial dimensions:
+
+---
+
+### **User-Level Metrics**
+- Annual income  
+- City / occupation metadata  
+- Priority-weighted goals  
+- User financial profiling  
+
+---
+
+### **Transaction Metrics**
+- Income / expense classification  
+- Category-level summaries  
+- Daily and monthly trends  
+- Time-series patterns  
+
+---
+
+### **Budget Metrics**
+- Budget vs actual variance  
+- Utilization % by category & month  
+- Overspending alerts  
+- Risk identification  
+
+---
+
+### **Savings Metrics**
+- Progress ratio (current / target)  
+- Timeline tracking  
+- On-track vs behind classification  
+- Goal prioritization  
+
+---
+
+These metrics mirror real FP&A workflows where **auditable models**,  
+**structured datasets**, and **clean documentation** support forecasting and strategic decision-making.
+
+---
+
+# **5. Streamlit Dashboard Modules (Detailed)**
+
+## **5.1 Homepage (`app.py`)**
+- Income, expenses, net savings KPIs  
+- Monthly income vs expenses line charts  
+- Category-level spending analysis  
+- Savings goal progress  
+- Budget utilization heatmap  
+
+## **5.2 Transactions Explorer**
+- SQL-style filtering tools  
+- Category comparisons  
+- Time-series visualizations  
+- Full transactional table  
+
+## **5.3 Budget Analysis**
+- Grouped bar charts  
+- Utilization heatmaps  
+- Overspending warning panel  
+- User-specific category breakdowns  
+
+## **5.4 Savings & Goals**
+- Horizontal bar progress visualization  
+- Gantt-style timelines  
+- Goal segmentation charts  
+- Key savings performance numbers  
+
+---
+
+# **6. Installation & Setup**
+
+### **1. Clone the Repository**
+```bash
+git clone https://github.com/your-repo-url.git
+cd Financial_Analytics_Dashboard
 ```
 
-### 4.2 Data Generation & Insertion
-
-Python was used to generate realistic synthetic data for:
-
-- Users  
-- Accounts  
-- Financial categories  
-- Transactions (3,000+ entries)  
-- Budgets  
-- Savings goals  
-
-**Example — Category Insertion**
-```sql
-INSERT INTO Categories (category_name, category_type)
-VALUES 
-("Salary", "Income"),
-("Groceries", "Expense"),
-("Rent", "Expense");
+### **2. Install Dependencies**
+```bash
+pip install -r requirements.txt
 ```
 
-### 4.3 Analysis (SQL Views)
+### **3. Launch the Streamlit Dashboard**
+```bash
+streamlit run app.py
+```
+OR
 
-Several SQL views were created to support analysis and simplify reporting.  
-These views aggregate financial data and prepare it for Tableau visualization.
-
-The main views include:
-
-- **MonthlySummary**  
-- **CategorySpending**  
-- **BudgetVsActual**  
-- **SavingsProgress**
-
-**Example — Savings Progress View**
-```sql
-CREATE VIEW IF NOT EXISTS SavingsProgress AS
-SELECT 
-    user_id,
-    goal_name,
-    target_amount,
-    current_amount,
-    ROUND((current_amount * 100.0) / target_amount, 2) AS progress_percentage
-FROM SavingsGoals;
+```bash
+python -m streamlit run app.py
 ```
 
-### 4.4 Analytical SQL Queries
+### **4. Open in Browser**
+https://linetlydia-financial-management-system--financial-appapp-eqyngs.streamlit.app/
 
-Python executed several SQL queries to generate financial insights, including:
+# **8. Use Cases**
 
-- **Monthly income vs expenses**
-- **Spending by category**
-- **Budget utilization tracking**
-- **Savings goal progress analysis**
+This project supports workflows such as:
 
-These queries pulled data from both raw tables and SQL views created earlier.
+- **Financial operations & variance monitoring**
 
-**Example — Retrieve Monthly Summary**
-```sql
-SELECT *
-FROM MonthlySummary
-ORDER BY year_month;
-```
+- **Budget planning and forecast preparation**
 
-## 5. Tableau Visualizations
+- **Expense reconciliation and classification**
 
-An interactive Tableau dashboard was created to display key financial insights and trends.
+- **Building internal finance data tools**
 
-**Live Dashboard:**  
-https://public.tableau.com/app/profile/linet.lydia/viz/FinancialManagementSystemFMS/Dashboard1-FinancialPerformanceOverview
-https://public.tableau.com/app/profile/linet.lydia/viz/FinancialManagementSystemFMS-D2/Dashboard2-Savinggoalsoverview?publish=yes
+- **Modeling user-level financial behavior**
 
-The dashboard includes the following visualizations:
+- **FP&A-driven reporting automation**
 
-- **Monthly Income vs Expenses** — Line Chart  
-- **Spending by Category** — Bar Chart  
-- **Budget Utilization** — Heatmap  
-- **Savings Goal Progress** — Bar Chart  
-- **Savings Timeline** — Gantt Chart  
+- **Personal finance analysis**
 
-These visualizations provide a comprehensive view of financial behavior, helping identify trends, overspending, and long-term progress toward goals.
+Possible extensions include:
 
-## 6. Conclusion
+- **Warehouse integration + dbt modeling**
 
-This project demonstrates how **SQL**, **Python**, and **Tableau** can be integrated to build a complete financial analytics system.  
-The Financial Management System supports:
+- **AI-enhanced forecasting**
 
-- Expense tracking  
-- Income analysis  
-- Monthly budget monitoring  
-- Savings goal evaluation  
-- Visual and statistical financial insights  
+- **ARR, LTV, CAC modeling for SaaS finance**
 
-It highlights strong skills in **data engineering**, **SQL analytics**, and **business intelligence**, resulting in a fully functional, end-to-end analytical solution.
+- **Compensation automation workflows**
 
-## 7. Author
+- **BI tool integrations**
 
-**Linet Lydia Kagundu**  
-Data Science Student | Financial Data Analyst  
-Nairobi, Kenya
+# **9. Future Enhancements**
 
+- PostgreSQL / BigQuery migration
+
+- dbt transformation layer
+
+- ML models for spending/savings forecasting
+
+- PDF reporting automation
+
+- Authentication & user roles
+
+- Cloud storage ingestion
+
+- Real-time data sync
+
+# **10. Author**
+
+**Linet Lydia Kagundu**
+Finance & Data Analyst | SQL | Python | BI & Analytics
+Focused on building **data-driven financial systems,**
+scalable analytics workflows, and intelligent decision-support tools.
