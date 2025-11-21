@@ -17,6 +17,12 @@ savings = load_savings()
 st.title("💰 Savings & Goals Dashboard")
 st.markdown("Track savings goals, progress percentages, and timelines.")
 
+st.sidebar.page_link("app.py", label="🏠 Dashboard")
+st.sidebar.page_link("pages/01_User_Profile.py", label="👤 User Profile")
+st.sidebar.page_link("pages/02_Transactions_Explorer.py", label="💳 Transactions Explorer")
+st.sidebar.page_link("pages/03_Budget_Analysis.py", label="📊 Budget Analysis")
+st.sidebar.page_link("pages/04_Savings_and_Goals.py", label="🎯 Savings & Goals")
+
 # -------------------------------
 # User Filter
 # -------------------------------
