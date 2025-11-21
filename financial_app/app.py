@@ -37,7 +37,6 @@ monthly, category, savings, budget = load_data()
 # --------------------------
 # Streamlit Layout
 # --------------------------
-st.set_page_config(page_title="Financial Analytics Dashboard", layout="wide")
 st.title("💰 Financial Analytics Dashboard")
 st.markdown("Interactive analytics powered by **Python + Streamlit**")
 
