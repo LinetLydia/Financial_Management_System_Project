@@ -6,12 +6,10 @@ st.set_page_config(
     layout="wide",
 )
 
-# HIDE STREAMLIT DEFAULT MULTIPAGE SIDEBAR
+# ✨ HIDE STREAMLIT DEFAULT MULTIPAGE SIDEBAR
 st.markdown("""
     <style>
         section[data-testid="stSidebarNav"] {display: none !important;}
-        div[data-testid="stSidebarNavItems"] {display: none !important;}
-        div[data-testid="stSidebarNav"] {display: none !important;}
     </style>
 """, unsafe_allow_html=True)
 
@@ -27,8 +25,8 @@ st.sidebar.page_link("pages/04_Savings_and_Goals.py", label="🎯 Savings & Goal
 # ----------------------------
 # Page Content
 # ----------------------------
-
 st.title("✨ Financial Management System")
+
 st.markdown("""
 Welcome to the **Financial Analytics & Personal Finance Intelligence System**.  
 This application integrates *data science, analytics, and interactive dashboards* to provide a full 360° view of an individual's financial activity.
@@ -68,10 +66,9 @@ This project showcases your skills in:
 Choose a section from the sidebar to begin your analysis.
 
 Or jump straight into the main dashboard:
-
 """)
 
-# Centered button
+# Centered dashboard button
 col1, col2, col3 = st.columns([1, 2, 1])
 with col2:
-    st.page_link("app.py", label="➡️ Launch Dashboard", icon=None)
+    st.page_link("app.py", label="➡️ Launch Dashboard")
