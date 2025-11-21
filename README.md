@@ -74,7 +74,7 @@ VALUES
 ("Rent", "Expense");
 ```
 
-### 4.3 Feature Engineering (SQL Views)
+### 4.3 Analysis (SQL Views)
 
 Several SQL views were created to support analysis and simplify reporting.  
 These views aggregate financial data and prepare it for Tableau visualization.
