@@ -121,7 +121,8 @@ ORDER BY year_month;
 An interactive Tableau dashboard was created to display key financial insights and trends.
 
 **Live Dashboard:**  
-https://public.tableau.com/views/FinancialManagementSystemFMS/Dashboard1-FinancialPerformanceOverview?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
+https://public.tableau.com/app/profile/linet.lydia/viz/FinancialManagementSystemFMS/Dashboard1-FinancialPerformanceOverview
+https://public.tableau.com/app/profile/linet.lydia/viz/FinancialManagementSystemFMS-D2/Dashboard2-Savinggoalsoverview?publish=yes
 
 The dashboard includes the following visualizations:
 
