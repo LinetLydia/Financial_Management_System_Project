@@ -66,7 +66,7 @@ st.subheader("🔥 Budget Utilization Heatmap")
 pivot = df.pivot_table(
     index="category_name",
     columns="month",
-    values="utilization_percentage"
+    values="utilization"
 )
 
 fig2 = px.imshow(
