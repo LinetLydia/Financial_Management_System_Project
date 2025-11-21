@@ -83,10 +83,10 @@ st.plotly_chart(fig2, use_container_width=True)
 # -------------------------------
 st.subheader("⚠️ Overspending Alerts")
 
-alerts = df[df["utilization_percentage"] > 100]
+alerts = df[df["utilization"] > 100]
 
 if alerts.empty:
     st.success("No overspending detected. All categories are within budget.")
 else:
     st.error("Overspending detected in the following categories:")
-    st.dataframe(alerts[["month", "category_name", "utilization_percentage"]])
+    st.dataframe(alerts[["month", "category_name", "utilization"]])
