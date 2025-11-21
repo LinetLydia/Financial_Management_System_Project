@@ -37,8 +37,6 @@ The Financial Management System uses six main tables:
 
 These tables include primary keys, foreign keys, constraints, and appropriate relationships.
 
-*ER Diagram to be added* (can be generated using dbdiagram.io, DrawSQL, or Lucidchart).
-
 ## 4. SQL & Python Pipeline
 
 ### 4.1 Schema Creation (Python + SQLite)
