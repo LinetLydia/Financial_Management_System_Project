@@ -80,6 +80,8 @@ This component provides a **flexible, data-driven interface** for financial expl
 
 ## **2.3 Tableau Dashboard — Executive Overview**
 
+Live Dashboard: https://public.tableau.com/app/profile/linet.lydia/viz/FinancialManagementSystemFMS/Dashboard1-FinancialPerformanceOverview https://public.tableau.com/app/profile/linet.lydia/viz/FinancialManagementSystemFMS-D2/Dashboard2-Savinggoalsoverview?publish=yes
+
 The accompanying Tableau dashboard provides:
 
 - High-level summaries  
