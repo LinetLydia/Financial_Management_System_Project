@@ -18,7 +18,7 @@ st.markdown("""
 # ----------------------------
 # Custom Sidebar Navigation
 # ----------------------------
-st.sidebar.page_link("../app.py", label="🏠 Dashboard")
+st.sidebar.page_link("app.py", label="🏠 Dashboard")
 st.sidebar.page_link("01_User_Profile.py", label="👤 User Profile")
 st.sidebar.page_link("02_Transactions_Explorer.py", label="💳 Transactions Explorer")
 st.sidebar.page_link("03_Budget_Analysis.py", label="📊 Budget Analysis")
