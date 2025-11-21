@@ -41,7 +41,7 @@ annual_income = user_data["annual_income"]
 st.markdown(
     f"""
     ### 💼 Annual Income  
-    **${annual_income:,.0f}**
+    **${annual_income:, .0f}**
     """
 )
 
