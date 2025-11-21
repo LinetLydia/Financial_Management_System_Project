@@ -5,7 +5,7 @@ import plotly.express as px
 @st.cache_data
 def load_transactions():
     # Load the CSV that holds all raw transactions
-    return pd.read_csv("C:/Users/hp/projects/Financial_Management_System/financial_app/transactions_full.csv")
+    return pd.read_csv("transactions_full.csv")
 
 # Helper to guess common column names safely
 def pick_column(cols, candidates):

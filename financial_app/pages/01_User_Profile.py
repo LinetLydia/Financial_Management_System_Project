@@ -7,7 +7,7 @@ import plotly.express as px
 # ----------------------------------------
 @st.cache_data
 def load_savings():
-    return pd.read_csv("C:/Users/hp/projects/Financial_Management_System/financial_app/savings_progress.csv")
+    return pd.read_csv("savings_progress.csv")
 
 savings = load_savings()
 
