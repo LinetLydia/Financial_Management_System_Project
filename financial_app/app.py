@@ -2,6 +2,12 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
+st.set_page_config(
+    page_title="Financial Dashboard",
+    layout="wide",
+    initial_sidebar_state="expanded"
+)
+
 @st.cache_data
 def load_data():
     monthly = pd.read_csv("monthly_summary.csv")
