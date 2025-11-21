@@ -1,84 +1,83 @@
-# **Financial Management System (SQL + Python + Tableau)**
+# Financial Management System (SQL + Python + Tableau)
 
-This project demonstrates the end-to-end development of a **Financial Management System (FMS)** using SQL (SQLite), Python, and Tableau.  
-The system tracks **income, expenses, budgets, and savings goals**, and visualizes financial insights through an interactive Tableau dashboard.
+This project demonstrates the end-to-end development of a Financial Management System (FMS) using SQLite (SQL), Python, and Tableau Public.  
+The system stores income, expenses, budgets, and savings goals and visualizes key financial insights through interactive dashboards.
 
 ---
 
-# **1. Project Overview**
-The Financial Management System was built to:
+## 1. Project Overview
+
+The Financial Management System was designed to:
 
 - Store and organize personal financial transactions  
-- Track income and expenses  
-- Monitor monthly budgets  
-- Analyze financial trends  
+- Track income and expenses across multiple categories  
+- Monitor monthly budgets and detect overspending  
+- Analyze financial behavior and trends over time  
 - Evaluate progress toward savings goals  
-- Generate visual summaries of spending and savings  
+- Generate visual insights through dashboards (Tableau)
 
-This project showcases skills in **database design**, **SQL querying**, **Python data engineering**, and **Tableau visualization**.
+This project showcases skills in **database design**, **SQL querying**, **Python-based data engineering**, and **Tableau dashboard development**.
 
 ---
 
-# **2. Technologies Used**
-- **Python** (sqlite3, pandas)  
+## 2. Technologies Used
+
+- **Python** (sqlite3, pandas, datetime, random)  
 - **SQLite Database**  
-- **Tableau Public** (Interactive dashboard)  
+- **Tableau Public** (interactive dashboards)  
 - **Jupyter Notebook**  
-- **Markdown**
+- **Markdown** for project documentation  
 
 ---
 
-# **3. Database Schema (ER Diagram)**
+## 3. Database Schema (ER Diagram)
+
 The system uses six core tables:
 
-- `Users`  
-- `Accounts`  
-- `Categories`  
-- `Transactions`  
-- `Budgets`  
-- `SavingsGoals`
+1. **Users**  
+2. **Accounts**  
+3. **Categories**  
+4. **Transactions**  
+5. **Budgets**  
+6. **SavingsGoals**  
 
-**ER Diagram (to add later):**  
-*You can generate it using dbdiagram.io, DrawSQL, or Lucidchart.*
+These tables include primary keys, foreign keys, constraints, and relationships supporting a fully normalized structure.
+
+*ER Diagram (to be added)* — can be generated using dbdiagram.io, DrawSQL, or Lucidchart.
 
 ---
 
-# **4. SQL & Python Pipeline**
+## 4. SQL & Python Pipeline
 
-## **4.1 Data Preparation (Schema Creation)**  
-All tables were created in Python using `sqlite3`:
+### 4.1 Schema Creation (Python + SQLite)
 
-```python
-# Example: Users Table
-cur.execute("""
+All tables were created programmatically using Python’s `sqlite3` package.
+
+**Example — Users Table:**
+```sql
 CREATE TABLE IF NOT EXISTS Users (
     user_id INTEGER PRIMARY KEY,
     name TEXT NOT NULL,
     email TEXT UNIQUE NOT NULL
 );
-""")
-```
 
-The full schema includes primary keys, foreign keys, and constraints for data integrity.
+### 4.2 Sample Data Generation & Insertion
 
----
-
-## **4.2 Sample Data Insertion**
-Python was used to insert sample:
+Python scripts were used to generate **realistic Kenyan-style financial data**, including:
 
 - Users  
 - Accounts  
 - Categories  
-- Transactions  
-- Budgets  
+- Transactions (3000+ records)  
+- Budgets (monthly per category)  
 - Savings Goals  
 
-Example insertion:
+Below is an example of inserting sample categories into the database:
 
 ```python
 cur.executemany("""
-INSERT INTO Categories (category_name, category_type)
-VALUES (?, ?);
+    INSERT INTO Categories (category_name, category_type)
+    VALUES (?, ?);
 """, [
     ("Salary", "Income"),
     ("Groceries", "Expense"),
@@ -86,90 +85,6 @@ VALUES (?, ?);
     ("Utilities", "Expense"),
     ("Freelance", "Income")
 ])
-```
 
----
-
-## **4.3 Feature Engineering (SQL Views)**  
-These SQL Views were created:
-
-- `IncomeExpenseSummary`  
-- `CategorySpending`  
-- `MonthlySummary`  
-- `SavingsProgress`  
-
-Example:
-
-```sql
-CREATE VIEW IF NOT EXISTS SavingsProgress AS
-SELECT 
-    user_id,
-    goal_name,
-    target_amount,
-    current_amount,
-    ROUND((current_amount * 100.0) / target_amount, 2) AS progress_percentage
-FROM SavingsGoals;
-```
-
----
-
-## **4.4 Analytical SQL Queries**
-Python executed analysis queries such as:
-
-- Monthly income vs expenses  
-- Category spending  
-- Savings goal progress  
-- Monthly savings trends  
-
-Example:
-
-```sql
-SELECT *
-FROM MonthlySummary
-ORDER BY year_month;
-```
-
----
-
-# **5. Tableau Visualizations**
-
-## **Interactive Dashboard**
-View the live dashboard here:
-
-**https://public.tableau.com/app/profile/linet.lydia/viz/financemanagementsystemdashboard/Dashboard2**
-
----
-
-The dashboard includes:
-
-### Category Spending (Bar Chart)  
-Shows how money is distributed across expense categories.
-
-### Monthly Line Chart  
-Displays income, expenses, and savings over time.
-
-### Savings Progress (Bar Chart)  
-Shows percentage completion toward savings goals.
-
----
-
-# **7. Conclusion**
-This project demonstrates how SQL, Python, and Tableau can be combined to build a complete **financial analytics system**.  
-The system successfully performs:
-
-- Expense tracking  
-- Income analysis  
-- Budget monitoring  
-- Savings evaluation  
-- Data visualization  
-
-It provides meaningful financial insights both numerically (SQL) and visually (Tableau).
-
----
-
-# **8. Author**
-**Linet Lydia Kagundu**  
-Data Science Student | Financial Data Analyst  
-Nairobi, Kenya
 
 
